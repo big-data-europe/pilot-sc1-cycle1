@@ -86,19 +86,47 @@ To see how to connect Docker to this machine, run: docker-machine env default
 ```
 ### Step 4: Connecting to the 'default' docker machine via SSH
 
+#### Step 4.1: SSH IP and port 
 First, you'll need to find the ip address of your docker machine and the SSH access port.
-To find the IP address type: `docker-machine env`
-```
-C:\Users\%user%>docker-machine env
-SET DOCKER_TLS_VERIFY=1
-SET DOCKER_HOST=tcp://192.168.99.100:2376
-SET DOCKER_CERT_PATH=C:\Users\francis\.docker\machine\machines\default
-SET DOCKER_MACHINE_NAME=default
-REM Run this command to configure your shell:
-REM     @FOR /f "tokens=*" %i IN ('docker-machine env') DO @%i
-```
-`192.168.99.100` is the IP address in this example
 
-To find the SSH port type: `docker-machine -D ssh default` and find the line that looks like: `&{{{<nil> 0 [] [] []} docker [0xe878d0] <nil>  []} 127.0.0.1 50533 <nil>}`
-#### Step 4.1: Install PuTTY 
+
+To find the SSH port and IP address, type: `docker-machine -D ssh default` and find the line that looks like: `&{{{<nil> 0 [] [] []} docker [0xe878d0] <nil>  []} 127.0.0.1 50533 <nil>}`
+
+`127.0.0.1` is the IP and `50533` is the port in this example
+
+#### Step 4.2: import the private certificate key
+Importing the private certificate key in your SSH client is needed to login via ssh without password (currently I don't know how to find the password and the machine is automatically generated). 
+The key is stored in the `id_rsa` file in `.docker/machine/machines/default' folder.
+The import procedure depends on your ssh client, but for PuTTY you can find the instructions [here](https://docs.docker.com/engine/installation/windows/#login-with-putty-instead-of-using-the-cmd)
+
+#### Step 4.3: login!
+Note, the username is the name of your docker-machine which is `default` in our example. Now you should be able to (at least locally on your machine) login via ssh : `ssh default@127.0.0.1:50533` and get something like: 
+```
+login as: docker
+Authenticating with public key "imported-openssh-key" from agent
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /"""""""""""""""""\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+           \______ o           __/
+             \    \         __/
+              \____\_______/
+ _                 _   ____     _            _
+| |__   ___   ___ | |_|___ \ __| | ___   ___| | _____ _ __
+| '_ \ / _ \ / _ \| __| __) / _` |/ _ \ / __| |/ / _ \ '__|
+| |_) | (_) | (_) | |_ / __/ (_| | (_) | (__|   <  __/ |
+|_.__/ \___/ \___/ \__|_____\__,_|\___/ \___|_|\_\___|_|
+Boot2Docker version 1.11.2, build HEAD : a6645c3 - Wed Jun  1 22:59:51 UTC 2016
+Docker version 1.11.2, build b9f10c9
+docker@default:~$ 
+```
+
+
+
+
+
+
+
+
 
