@@ -1,4 +1,4 @@
-# Pilot cycle 1 for Societal Challenge 'Health': integrating the Open PHACTS functionality on the BDE platform
+# Pilot cycle 1 for Societal Challenge 'Health': _integrating the Open PHACTS functionality on the BDE platform_
 
 ## _IMPORTANT: This repository is work in progress. We expect a stable release end of August 2016._
 * [Overview](#overview)
