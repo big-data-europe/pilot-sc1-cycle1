@@ -4,8 +4,8 @@
 * [Overview](#overview)
 * [Background Open PHACTS](#background)
 * [Requirements](#requirements)
-* [Linux installation]
-* [Windows installation]
+* [Linux installation](#linux installation)
+* [Windows installation](#windows installation)
 
 ## Overview
 This repository is meant to provide insight into the technical procedure and requirements of the first pilot for [Societal Challenge "Health"](https://www.big-data-europe.eu/health/) and to guide you to install it by yourself. By understanding the technology and the process-flows, we hope to encourage you to use it for your own domain. The goal of the pilot is to facilitate the [Open PHACTS Discovery Platform functionality](https://dev.openphacts.org/) via Docker containers on the Big-Data-Europe infrastructure. The Open PHACTS platform is built for researchers in Drug Discovery, however by design the technology itself is independent from the domain. Once you got familiar with the code and got it running by yourself, you should have enough experience to upload your own Linked Data, and create your own API.
@@ -33,13 +33,14 @@ Recommended hardware:
 
 Prerequisites:
 
-  - Windows 10 _or_ a recent x64 Linux distribution (e.g. Ubuntu 14.04 LTS, Centos 7) 
+  - Windows 10 **or** a recent x64 Linux distribution (e.g. Ubuntu 14.04 LTS, Centos 7) 
   - [Docker](https://docs.docker.com/installation/#installation) 1.7.1 or later
   - [Docker Compose](http://docs.docker.com/compose/install/) 1.5.2 or later
   - Fast Internet connection (during build of data containers)
 
 Note that the you would have to make the
 [disk space available for Docker](#disk-space-for-docker).
+
 ## Linux installation
 Available for recent x64 Linux install (e.g. 
 At this moment the installation is only using _docker-compose_ and _docker-machine_. The BigDataEurope Docker infrastructure also uses _docker-swarm_ and its own conventions,  templates, namespace allocation etc. The migration process is in progress.
