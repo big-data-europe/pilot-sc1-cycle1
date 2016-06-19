@@ -1,8 +1,9 @@
 # Pilot cycle 1 for Societal Challenge 'Health': integrating the Open PHACTS functionality on the BDE platform
 
-## IMPORTANT: This repository is work in progress. We expect a stable release end of August 2016.
+## _IMPORTANT: This repository is work in progress. We expect a stable release end of August 2016._
 * [Overview](#overview)
 * [Background Open PHACTS](#background)
+* [Requirements](#requirements)
 * [Linux installation]
 * [Windows installation]
 
@@ -16,9 +17,35 @@ The [Open PHACTS foundation](http://www.openphactsfoundation.org/) (BigDataEurop
 [Stian Soiland-Reyes](https://github.com/stain) is the main contributor and leader of the [Open PHACTS docker](https://github.com/openphacts/ops-docker) work.
 In collaboration with the [VU University Amsterdam](http://www.vu.nl) (both a member of the Open PHACTS foundation and the BigDataEurope consortium), the Open PHACTS foundation leads the work on Societal Challenge "Health" (SC1) in the BigDataEurope project. 
 All the data brought together by Open PHACTS is free to access, to help researchers in drug discovery to find and use the information they need.in the BigDataEurope consortium. 
-Details on the first pilot in the Health Societal Challenge: integrating the Open PHACTS functionality on the BDE platform
 
+
+## Requirements
+
+Roughly minimal hardware requirements:
+  - ~ 150 GB of disk space
+  - ~ 10 GB of RAM
+  - ~ 4 CPU core
+
+Recommended hardware:
+  - ~ 250 GB of SSD disk
+  - ~ 128 GB of RAM
+  - ~ 8 CPU cores
+
+Prerequisites:
+
+  - Windows 10 _or_ a recent x64 Linux distribution (e.g. Ubuntu 14.04 LTS, Centos 7) 
+  - [Docker](https://docs.docker.com/installation/#installation) 1.7.1 or later
+  - [Docker Compose](http://docs.docker.com/compose/install/) 1.5.2 or later
+  - Fast Internet connection (during build of data containers)
+
+Note that the you would have to make the
+[disk space available for Docker](#disk-space-for-docker).
 ## Linux installation
+Available for recent x64 Linux install (e.g. 
+At this moment the installation is only using _docker-compose_ and _docker-machine_. The BigDataEurope Docker infrastructure also uses _docker-swarm_ and its own conventions,  templates, namespace allocation etc. The migration process is in progress.
 
+For instructions please visit: [Open PHACTS Docker images](https://github.com/openphacts/ops-docker)
+
+## Windows 10 installation
 
 
