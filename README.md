@@ -5,7 +5,7 @@
 * [Background Open PHACTS](#background)
 * [Requirements](#requirements)
 * [Linux installation](#linux-installation)
-* [Windows installation](#windows-10-installation)
+* [Windows installation](#windows-installation)
 
 ## Overview
 This repository is meant to provide insight into the technical procedure and requirements of the first pilot for [Societal Challenge "Health"](https://www.big-data-europe.eu/health/) and to guide you to install it by yourself. By understanding the technology and the process-flows, we hope to encourage you to use it for your own domain. The goal of the pilot is to facilitate the [Open PHACTS Discovery Platform functionality](https://dev.openphacts.org/) via Docker containers on the Big-Data-Europe infrastructure. The Open PHACTS platform is built for researchers in Drug Discovery, however by design the technology itself is independent from the domain. Once you got familiar with the code and got it running by yourself, you should have enough experience to upload your own Linked Data, and create your own API.
@@ -33,7 +33,7 @@ Recommended hardware:
 
 Prerequisites:
 
-  - Windows 10 **or** a recent x64 Linux distribution (e.g. Ubuntu 14.04 LTS, Centos 7) 
+  - Windows 7,8 or 10 **or** a recent x64 Linux distribution (e.g. Ubuntu 14.04 LTS, Centos 7) 
   - [Docker](https://docs.docker.com/installation/#installation) 1.7.1 or later
   - [Docker Compose](http://docs.docker.com/compose/install/) 1.5.2 or later
   - Fast Internet connection (during build of data containers)
@@ -47,15 +47,21 @@ At this moment the installation is only using _docker-compose_ and _docker-machi
 
 For instructions please visit: [Open PHACTS Docker images](https://github.com/openphacts/ops-docker)
 
-## Windows 10 installation
+## Windows installation
 Successfully tested on a Windows 10 Home (version 1511) machine with Intel Core i7-6920HQ CPU @ 2.90GHz, 32 GB RAM, 256 GB SSD and [Docker Toolbox v1.11.2](https://github.com/docker/toolbox/releases/download/v1.11.2/DockerToolbox-1.11.2.exe)
 
 ### Step 1: Removing previous installation of Docker Toolbox
 
 If this is the first time you install Docker Toolbox on your machine, things should be fine and you can skip to the next step. But if not, this tutorial only works if you removed the previous install. The reason is that the Toolbox comes with the Oracle VirtualBox, which is quite buggy in Windows 10. For example, when you close the VirtualBox GUI, it might still run in the background which causes GUI problems and even more important, messing up config files. 
 If you have important work which would be lost by the reinstall, please make a backup, or do not continue this manual.
-The easiest way to uninstall the Toolbox stuff is simply removing the `.docker` and `.VirualBox` folders from your home directory. It might be that Windows does not allow you to remove the folders because an active docker-machine/VirtualBox instance blocks the delete option. In that case check if the service is not started at reboot and reboot the machine ().
+The easiest way to uninstall the Toolbox stuff is simply removing the `.docker` and `.VirualBox` folders from your home directory. It might be that Windows does not allow you to remove the folders because an active docker-machine/VirtualBox instance blocks the delete option. In that case check if the service is not on auto-start and reboot the machine.
 
 ### Step 2: Installing Docker Toolbox
 
+
+  - [Download and install Docker Toolbox](https://www.docker.com/products/docker-toolbox)
+  - After install, _**never open Oracle Virtualbox**, because it can mess up the config for some reason. 
+  - Also _**never open 'Docker Quickstart'**_, because it automatically generates a default machine that does not have the right settings to run this pilot. 
+
+### Step 3: Creating a docker-machine
 
