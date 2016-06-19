@@ -84,6 +84,21 @@ Starting VirtualBox VM...
 Starting VM...
 To see how to connect Docker to this machine, run: docker-machine env default
 ```
-### Step 4: Connecting to the 'default' docker machine via Putty SSH
+### Step 4: Connecting to the 'default' docker machine via SSH
+
+First, you'll need to find the ip address of your docker machine and the SSH access port.
+To find the IP address type: `docker-machine env`
+```
+C:\Users\%user%>docker-machine env
+SET DOCKER_TLS_VERIFY=1
+SET DOCKER_HOST=tcp://192.168.99.100:2376
+SET DOCKER_CERT_PATH=C:\Users\francis\.docker\machine\machines\default
+SET DOCKER_MACHINE_NAME=default
+REM Run this command to configure your shell:
+REM     @FOR /f "tokens=*" %i IN ('docker-machine env') DO @%i
+```
+`192.168.99.100` is the IP address in this example
+
+To find the SSH port type: `docker-machine -D ssh default` and find the line that looks like: `&{{{<nil> 0 [] [] []} docker [0xe878d0] <nil>  []} 127.0.0.1 50533 <nil>}`
 #### Step 4.1: Install PuTTY 
 
