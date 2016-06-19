@@ -1,11 +1,11 @@
-# Pilot cycle 1 for Societal Challenge 'Health': _integrating the Open PHACTS functionality on the BDE platform_
+# Pilot cycle 1 for SC 'Health': _integrating the Open PHACTS functionality on the BDE platform_
 
 ## _IMPORTANT: This repository is work in progress. We expect a stable release end of August 2016._
 * [Overview](#overview)
 * [Background Open PHACTS](#background)
 * [Requirements](#requirements)
-* [Linux installation](#linux installation)
-* [Windows installation](#windows installation)
+* [Linux installation](#linux)
+* [Windows installation](#windows)
 
 ## Overview
 This repository is meant to provide insight into the technical procedure and requirements of the first pilot for [Societal Challenge "Health"](https://www.big-data-europe.eu/health/) and to guide you to install it by yourself. By understanding the technology and the process-flows, we hope to encourage you to use it for your own domain. The goal of the pilot is to facilitate the [Open PHACTS Discovery Platform functionality](https://dev.openphacts.org/) via Docker containers on the Big-Data-Europe infrastructure. The Open PHACTS platform is built for researchers in Drug Discovery, however by design the technology itself is independent from the domain. Once you got familiar with the code and got it running by yourself, you should have enough experience to upload your own Linked Data, and create your own API.
