@@ -48,5 +48,6 @@ At this moment the installation is only using _docker-compose_ and _docker-machi
 For instructions please visit: [Open PHACTS Docker images](https://github.com/openphacts/ops-docker)
 
 ## Windows 10 installation
+Successfully tested on a Windows 10 Home (version 1511) machine with Intel Core i7-6920HQ CPU @ 2.90GHz, 32 GB RAM, 256 GB SSD and [Docker Toolbox v1.11.2](https://github.com/docker/toolbox/releases/download/v1.11.2/DockerToolbox-1.11.2.exe)
 
 
