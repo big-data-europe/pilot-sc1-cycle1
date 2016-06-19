@@ -134,7 +134,8 @@ chmod +x /usr/local/bin/docker-compose
 ```
 
 ### Step 6: continue with installation steps from Linux instructions
-Now everything should be the same for any OS (thats at least Dockers promose :-) ), and you can continue from [here](https://github.com/openphacts/ops-docker/blob/master/README.md#retrieving-open-phacts-docker-images)
+Now everything should be the same for any OS (thats at least Dockers promose :-) ), and you can continue from [here](https://github.com/openphacts/ops-docker/blob/master/README.md#retrieving-open-phacts-docker-images).
+**note: all the commands are run from your ssh terminal**
 
 
 
