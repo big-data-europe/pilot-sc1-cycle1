@@ -122,6 +122,20 @@ Docker version 1.11.2, build b9f10c9
 docker@default:~$ 
 ```
 
+### Step 5: From your ssh terminal install docker-compose
+You will additionally need to install
+[Docker Compose](http://docs.docker.com/compose/install/). The exact version
+used below might be out of date, see the install guide for details.
+
+```shell
+sudo -i
+curl -L https://github.com/docker/compose/releases/download/1.6.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
+
+### Step 6: continue with installation steps from Linux instructions
+Now everything should be the same for any OS (thats at least Dockers promose :-) ), and you can continue from [here](https://github.com/openphacts/ops-docker/blob/master/README.md#retrieving-open-phacts-docker-images)
+
 
 
 
