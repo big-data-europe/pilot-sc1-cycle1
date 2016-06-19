@@ -60,8 +60,9 @@ The easiest way to uninstall the Toolbox stuff is simply removing the `.docker` 
 
 
   - [Download and install Docker Toolbox](https://www.docker.com/products/docker-toolbox)
-  - After install, _**never open Oracle Virtualbox**, because it can mess up the config for some reason. 
-  - Also _**never open 'Docker Quickstart'**_, because it automatically generates a default machine that does not have the right settings to run this pilot. 
+  - After install, **never** open _Oracle Virtualbox_, because it can mess up the config for some reason. 
+  - Also **never** open _Docker Quickstart_, because it automatically generates a default machine that does not have the right settings to run this pilot. 
 
 ### Step 3: Creating a docker-machine
-
+  - Open a Command prompt (click on magnifying glass left bottom and type 'cmd')
+  - Create a docker-machine with a 150GB virtual disk (this is the minimum): `docker-machine create --virtualbox-disk-size 150000 -d virtualbox default`
