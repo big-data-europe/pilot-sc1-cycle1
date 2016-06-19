@@ -31,15 +31,20 @@ Recommended hardware:
   - ~ 128 GB of RAM
   - ~ 8 CPU cores
 
-Prerequisites:
+Fast Internet connection (during build of data containers)
 
-  - Windows 7,8 or 10 **or** a recent x64 Linux distribution (e.g. Ubuntu 14.04 LTS, Centos 7) 
+Windows Prerequisites:
+  - Windows 7,8 or 10
+  - SSH client with certificate management e.g.:
+    - [Putty MSI installer](https://the.earth.li/~sgtatham/putty/latest/x86/putty-0.67-installer.msi) You'll need PuTTY.exe and PuTTYgen.exe -
+  - [Docker Toolbox v1.11.2](https://github.com/docker/toolbox/releases/download/v1.11.2/DockerToolbox-1.11.2.exe) or higher
+  
+Linux prerequisites:
+  - A recent x64 Linux distribution (e.g. Ubuntu 14.04 LTS, Centos 7) 
   - [Docker](https://docs.docker.com/installation/#installation) 1.7.1 or later
   - [Docker Compose](http://docs.docker.com/compose/install/) 1.5.2 or later
-  - Fast Internet connection (during build of data containers)
 
-Note that the you would have to make the
-[disk space available for Docker](#disk-space-for-docker).
+
 
 ## Linux installation
 Available for recent x64 Linux install (e.g. 
@@ -48,7 +53,7 @@ At this moment the installation is only using _docker-compose_ and _docker-machi
 For instructions please visit: [Open PHACTS Docker images](https://github.com/openphacts/ops-docker)
 
 ## Windows installation
-Successfully tested on a Windows 10 Home (version 1511) machine with Intel Core i7-6920HQ CPU @ 2.90GHz, 32 GB RAM, 256 GB SSD and [Docker Toolbox v1.11.2](https://github.com/docker/toolbox/releases/download/v1.11.2/DockerToolbox-1.11.2.exe)
+Successfully tested on a Windows 10 Home (version 1511) machine with Intel Core i7-6920HQ CPU @ 2.90GHz, 32 GB RAM, 256 GB SSD and 
 
 ### Step 1: Removing previous installation of Docker Toolbox
 
@@ -79,3 +84,6 @@ Starting VirtualBox VM...
 Starting VM...
 To see how to connect Docker to this machine, run: docker-machine env default
 ```
+### Step 4: Connecting to the 'default' docker machine via Putty SSH
+#### Step 4.1: Install PuTTY 
+
