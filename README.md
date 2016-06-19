@@ -47,7 +47,7 @@ Linux prerequisites:
 
 
 ## Linux installation
-Available for recent x64 Linux install (e.g. 
+Available for recent x64 Linux install 
 At this moment the installation is only using _docker-compose_ and _docker-machine_. The BigDataEurope Docker infrastructure also uses _docker-swarm_ and its own conventions,  templates, namespace allocation etc. The migration process is in progress.
 
 For instructions please visit: [Open PHACTS Docker images](https://github.com/openphacts/ops-docker)
@@ -134,7 +134,7 @@ chmod +x /usr/local/bin/docker-compose
 ```
 
 ### Step 6: continue with installation steps from Linux instructions
-Now everything should be the same for any OS (thats at least Dockers promose :-) ), and you can continue from [here](https://github.com/openphacts/ops-docker/blob/master/README.md#retrieving-open-phacts-docker-images).
+Now everything should be the same for any OS (thats at least Dockers promise :-) ), and you can continue from [here](https://github.com/openphacts/ops-docker/blob/master/README.md#retrieving-open-phacts-docker-images).
 **note: all the commands are run from your ssh terminal**
 
 
