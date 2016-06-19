@@ -50,4 +50,12 @@ For instructions please visit: [Open PHACTS Docker images](https://github.com/op
 ## Windows 10 installation
 Successfully tested on a Windows 10 Home (version 1511) machine with Intel Core i7-6920HQ CPU @ 2.90GHz, 32 GB RAM, 256 GB SSD and [Docker Toolbox v1.11.2](https://github.com/docker/toolbox/releases/download/v1.11.2/DockerToolbox-1.11.2.exe)
 
+### Step 1: Removing previous installation of Docker Toolbox
+
+If this is the first time you install Docker Toolbox on your machine, things should be fine and you can skip to the next step. But if not, this tutorial only works if you removed the previous install. The reason is that the Toolbox comes with the Oracle VirtualBox, which is quite buggy in Windows 10. For example, when you close the VirtualBox GUI, it might still run in the background which causes GUI problems and even more important, messing up config files. 
+If you have important work which would be lost by the reinstall, please make a backup, or do not continue this manual.
+The easiest way to uninstall the Toolbox stuff is simply removing the `.docker` and `.VirualBox` folders from your home directory. It might be that Windows does not allow you to remove the folders because an active docker-machine/VirtualBox instance blocks the delete option. In that case check if the service is not started at reboot and reboot the machine ().
+
+### Step 2: Installing Docker Toolbox
+
 
